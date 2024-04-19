@@ -30,7 +30,7 @@ ingredients_list= st.multiselect(
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 #st.text(fruityvice_response.json())
-fv_st=st.dataframe(data=fruityvice_response.json(), use_container_width= true)
+fv_st=st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
 if ingredients_list:
     ingredients_string='' 
